@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UCP PDW</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="html.png">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="teks-nav" href="index.html">UCP PDW</a>
+    <a href="index.html" id="nav-work" class="nav-link active"> Home </a>
+    <div class="dropdown">
+      <a href="#" id="nav-tugas" class="nav-link">
+        About Me<i class="fas fa-caret-down"></i>
+      </a>
+      <div class="dropdown-content">
+        <a href="FavSongAndMovie.html">Favorite</a>
+        <a href="Hobbies.html">Hobbies</a>
+        <a href="dailyRoutine.html">Routinity</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="nav-link" href="#footer">Contact Me!</a>
+    </div>
+  </header>
+
+  <div style="text-align: center;">
+    <h2 id="greeting"></h2>
+    <h3 id="current-time"></h3>
+  </div>
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true">
+
+    <section class="carousel-section">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/e0/c6/57/e0c6576c53d75ccb5daff4c0c9fe03e6.jpg"
+              class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>Hello There !</h1>
+              <p>My Name is Jodi</p>
+              <button onclick="showAlert()">Well, Hi</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/1c/43/4b/1c434bb703fefc95b22db4238674996a.jpg"
+              class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>I'm an Undergraduate Information Technology Student
+                at Muhammadiyah University of Yogyakarta</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/03/8c/79/038c79c647e5343fe53be75d81277253.jpg"
+              class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>
+                Explore my web, hopefully,
+                you guys are enjoy it!
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="container-footer">
+        <p>Pengembangan Desain Web - 2024 - Jodi Nur Farkhani</p>
+        <div class="social-icons">
+          <p>Need something? You can find me on</p>
+          <a href="https://www.instagram.com/jodinrf/?hl=en"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jodi-nur-farkhani-04845725b/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Jodinurf"><i class="fab fa-github"></i></a>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpccgmkCPFcTFTlNltclzpdDSRZqCnxrGBwvPrwfxjvcFwgJBpjpgrsRWNLPkXKDCKBsCl"><i
+              class="fab fa-google"></i></a>
+          <p>Copy Right &copy; 2024</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+      function updateGreetings() {
+        var today = new Date();
+        var currentHour = today.getHours();
+        var greetingsElement = document.getElementById("greeting");
+        var currentTimeElement = document.getElementById("current-time");
+        var greetings = "";
+  
+        if (currentHour < 12) {
+          greetings = "Good Morning";
+        } else if (currentHour < 18) {
+          greetings = "Good Afternoon";
+        } else if (currentHour < 20) {
+          greetings = "Good Evening";
+        } else {
+          greetings = "Good Night";
+        }
+        greetingsElement.innerText = greetings;
+        currentTimeElement.innerText =
+        today.toLocaleTimeString();
+      }
+      updateGreetings();
+      setInterval(updateGreetings, 1000);
+    </script>
+</body>
+</html>
