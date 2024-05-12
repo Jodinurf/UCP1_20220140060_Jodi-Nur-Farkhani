@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCP PDW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="html.png">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        width: auto;
+        height: fit-content;
+        background-color: #fc2a05;
+        font-size: 40px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+
+      .box-item {
+        text-align: center;
+        margin: 50px;
+        font-size: 20px;
+        color: #90a4ae;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 300px; /* Keep the width and height the same */
+        height: 300px; /* Keep the width and height the same */
+        border-radius: 10%; /* Remove border-radius to make square */
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: rgb(199, 53, 53);
+        transition: transform 0.3s ease;
+        overflow: hidden; /* Add overflow to hide the rounded corners */
+      }
+
+      .box img {
+        width: 100%; /* Ensure the image fills the square container */
+        height: 100%; /* Ensure the image fills the square container */
+        object-fit: cover;
+        border-radius: 0; /* Remove border-radius to make square */
+      }
+
+      .box:hover {
+        transform: scale(1.1);
+      }
+
+      .box-item p {
+        margin-top: 10px; /* Berikan jarak antara gambar dan teks */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a class="teks-nav" href="index.html">UCP PDW</a>
+      <a href="index.html" id="nav-work" class="nav-link active"> Home </a>
+      <div class="dropdown">
+        <a href="#" id="nav-tugas" class="nav-link">
+          About Me<i class="fas fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+          <a href="FavSongAndMovie.html">Favorite</a>
+          <a href="Hobbies.html">Hobbies</a>
+          <a href="dailyRoutine.html">Routinity</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="nav-link" href="#footer">Contact Me!</a>
+      </div>
+    </header>
+
+    <h1>Something I Often do When I'm Bored and has Become my Hobbies</h1>
+    <div class="box-container">
+      <div class="box-item">
+        <div class="box">
+          <img
+            src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc04e4637524166dc/621853fd6be1e66143a66db2/022822_TakeoverCap_Banner.jpg?auto=webp&disable=upscale&height=549"
+            alt="Game Valo"
+            width="200"
+            height="200"
+          />
+        </div>
+        <p>Playing a Game</p>
+      </div>
+      <div class="box-item">
+        <div class="box">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BNGY4MTg3NzgtMmFkZi00NTg5LWExMmEtMWI3YzI1ODdmMWQ1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
+            alt="Jujutsu Kaisen"
+            width="200"
+            height="200"
+          />
+        </div>
+        <p>Watching some animes</p>
+      </div>
+      <div class="box-item">
+        <div class="box">
+          <img
+            src="https://www.motorcyclenews.com/wp-images/194149/best-sports-tourers.jpg"
+            alt="Motorcycle"
+            width="200"
+            height="200"
+          />
+        </div>
+        <p>Touring</p>
+      </div>
+      <div class="box-item">
+        <div class="box">
+          <img
+            src="https://i.pinimg.com/564x/55/26/3e/55263ea229b1a0a0adb85888b5a7e3b2.jpg"
+            alt="eat"
+            width="200"
+            height="200"
+          />
+        </div>
+        <p>EATS!</p>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="container-footer">
+        <p>Pengembangan Desain Web - 2024 - Jodi Nur Farkhani</p>
+        <div class="social-icons">
+          <p>Need something? You can find me on</p>
+          <a href="https://www.instagram.com/jodinrf/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jodi-nur-farkhani-04845725b/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Jodinurf"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpccgmkCPFcTFTlNltclzpdDSRZqCnxrGBwvPrwfxjvcFwgJBpjpgrsRWNLPkXKDCKBsCl"
+            ><i class="fab fa-google"></i
+          ></a>
+          <p>Copy Right &copy; 2024</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
