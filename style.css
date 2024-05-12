@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    color: #CFD8DC;
+    text-align: left;
+    background-color: #000000;
+    font-family: "Roboto Slab", serif;
+    background-image: url(https://i.pinimg.com/originals/e5/fe/2d/e5fe2d9698897287eaffdc686286a0d2.jpg);
+}
+
+.teks-nav {
+    color: #fc2a05;
+    text-decoration: none;
+    font-size: 55px;
+    margin-right: 700px;
+    margin-left: 40px;
+    padding: 15px;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: #222020;
+    padding: 15px;
+    display: flex;
+    align-items: center;  
+}
+
+.nav-link {
+    display: block;
+    padding: 0 15px;
+    color: #90A4AE;
+    text-decoration: none;
+    font-size: 19px; 
+}
+
+.nav-link:hover {
+    color: #fc2a05;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #90A4AE;
+    min-width: 130px;
+    border-radius: 5px;
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fc2a05;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.home {
+    text-align: center;
+    padding-top: 10px;
+    color: #90A4AE;
+}
+
+.home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home h1 {
+    margin-bottom: 33px;
+}
+
+.home p {
+    margin-bottom: 33px;
+}
+
+.home button {
+    background-color: #b9928b;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #7b5c56;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home button:hover {
+    background-color: #b9928b;
+    box-shadow: 0 4px 6px #7b5c56;
+}
+
+section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    padding-top: 330px;
+}
+
+audio{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#music1{
+    display: none;
+}
+
+#music2{
+    display: none;
+}
+
+#music3{
+    display: none;
+}
+
+#music4{
+    display: none;
+}
+
+.music-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    flex-direction: column; 
+}
+
+.music-container:hover {
+    transform: scale(110%);
+}
+
+
+
+.gambar1,
+.gambar2,
+.gambar3 {
+    flex: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+  
+.row-gambar {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    position: relative;
+    width: 500px; 
+    height: 315px; 
+    margin: auto; 
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+
+.gambar1 img,
+.gambar2 img,
+.gambar3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+}
+
+h2 {
+    font-size: 50px;
+    color: #7a8b94;
+    text-shadow: 2px 2px 4px #2f2e2e;
+    
+}
+
+h3 {
+    font-size: 40px;
+    color: #7a8b94;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 40px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a8b94;
+}
+
+p {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #222020;
+    color: #90A4AE;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #90A4AE;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-icons a:hover {
+    color: #fc2a05;
+}
